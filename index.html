@@ -1,0 +1,330 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortofolio Kokoro.Id</title>
+    <!-- Include the Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="foto/lOGO .png" type="image/x-icon">
+    <link rel="stylesheet" href="gaya.css">
+</head>
+
+<body>
+   <!-- Navigator Bar -->
+<nav class="bg-blue-900 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo and Shop Name -->
+        <div class="flex items-center">
+            <img src="foto/lOGO .png" alt="Logo" class="w-8 h-8 mr-2">
+            <div class="text-white font-semibold text-xl">Kokoro.Id</div>
+        </div>
+        <!-- Responsive Menu Button -->
+        <div class="md:hidden">
+            <button id="menuButton" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Navigation Links -->
+        <div id="navLinks" class="hidden md:flex space-x-5">
+            <a href="index.html" class="text-white hover:text-gray-300"><b>Home</b></a>
+            <a href="Batch 5.html" class="text-white hover:text-gray-300"><b>All Product</b></a>
+            <a href="Batch 2.html" class="text-white hover:text-gray-300"><b>About</b></a>
+            <a href="Batch 4.html" class="text-white hover:text-gray-300"><b>Testimoni</b></a>
+            <a href="#contact" class="text-white hover:text-gray-300"><b>Contact</b></a>
+        </div>
+    </div>
+</nav>
+
+<!-- JavaScript for Responsive Menu -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.getElementById('menuButton');
+        const navLinks = document.getElementById('navLinks');
+
+        menuButton.addEventListener('click', function() {
+            navLinks.classList.toggle('hidden');
+        });
+    });
+</script>
+<!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="flex justify-end p-4">
+            <button id="close-mobile-menu-btn" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center">
+            <a href="Batch 1.html" class="text-white py-2">Home</a>
+            <a href="Batch 2.html" class="text-white py-2">About</a>
+            <a href="#" class="text-white py-2">Services</a>
+            <a href="#" class="text-white py-2">Contact</a>
+        </div>
+    </div>
+
+    <!-- Section Tagline with Background Photo -->
+    <section id="tagline" class="bg-cover bg-center relative"
+        style="background-image: url('foto/Kokoro Onigiri.png');">
+        <div class="bg-gray-800 bg-opacity-50 py-16 relative z-10">
+            <div class="container mx-auto text-center text-white">
+                <h2 class="font-timesnewroman text-3xl font-semibold mb-4">Untuk Senyuman Harimu</h2>
+                <a href="Batch 2.html" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded-full">View
+                    Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tagline -->
+    <section id="about" class="bg-gray-100 py-16 bg-cover bg-center relative"  style="background-image: url('foto/BG2.png');">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center">
+            <!-- About Description (Left) -->
+            <div class="lg:w-1/2 lg:mr-8">
+                <h2 id="tampilan1" class="text-3xl font-semibold text-blue-900 mb-4">About</h2>
+                <p id="tampilan2" class="text-Blue-900 leading-relaxed">
+                    Kokoro.Id Usaha yang mencakup beberapa bidang,
+                    mulai dari kuliner, aksesoris, hingga dunia kreatif.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-900 mb-4">Best Seller</h2>
+            <p class="text-gray-600 leading-relaxed">
+
+            </p>
+        </div>
+
+        <!-- Catalog Items -->
+        <div class="container mx-auto mt-8  grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- Catalog Item 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="foto/Produk.jpg" alt="Catalog Item 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Kokoro Onigiri</h3>
+                    <p class="text-gray-600">Rasakan sensasi lembutnya nasi kepal dari koko:D</p>
+                    <div class="mt-4">
+                        <span class="text-blue-900 font-semibold">Harga:</span> Rp 3.000
+                    </div>
+                </div>
+            </div>
+            <!-- Catalog Item 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="foto/Product 3.jpg" alt="Catalog Item 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ganci Insert Akrilik</h3>
+                    <p class="text-gray-600">Kreasikan aksimu bersama Koko:D</p>
+                    <div class="mt-4">
+                        <span class="text-blue-900 font-semibold">Harga:</span> Rp 6.000
+                    </div>
+                </div>
+            </div>
+
+             <!-- Catalog Item 3 -->
+             <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="foto/Product 4.png" alt="Catalog Item 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ganci Costum Ori</h3>
+                    <p class="text-gray-600">Kreasikan aksimu bersama Koko:D</p>
+                    <div class="mt-4">
+                        <span class="text-blue-900 font-semibold">Harga:</span> Rp 3.500 - 5.500
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more catalog items as needed -->
+
+
+        </div>
+    </section>
+
+    <!-- Section Testimonials -->
+    <section id="testimonials" class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">What Our Customers Say</h2>
+
+            <!-- Testimonials Carousel -->
+            <div class="flex flex-wrap justify-center">
+                <!-- Testimonial 1 -->
+                <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                    <img src="foto/Testi1.jpg" alt="">
+                    <p class="text-gray-600">
+                       
+                    </p>
+                    <p class="text-gray-800 font-semibold mt-4">- Costumer 1 and 2</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                    <img src="foto/Testi2.jpg" alt="">
+                    <p class="text-gray-600">
+                        
+                    </p>
+                    <p class="text-gray-800 font-semibold mt-4">- Costumer 3</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                    <img src="foto/Testi3.jpg" alt="">
+                    <p class="text-gray-600">
+                        
+                    </p>
+                    <p class="text-gray-800 font-semibold mt-4">Costumer 4</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                    <img src="foto/Testi4.jpg" alt="">
+                    <p class="text-gray-600">
+                        
+                    </p>
+                    <p class="text-gray-800 font-semibold mt-4">- Costumer 5</p>
+                </div>
+
+                <!-- Add more testimonials as needed -->
+
+            </div>
+        </div>
+    </section>
+
+<!-- Section Karya Esai -->
+<section id="testimonials" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Section Khusus</h2>
+
+        <!-- Testimonials Carousel -->
+        <div class="flex flex-wrap justify-center">
+            <!-- Testimonial 1 -->
+            <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                <img src="foto/Kokoro Onigiri.png" alt="">
+                <h5><b>Explaning A Process</b></h5>
+                <p class="text-gray-600">
+                    Venturing into the Kokoro Onigiri business is not just about creating 
+                    delicious offerings but also about a systematic and planned process. 
+                </p>
+                <a href="Batch 3.html" class="text-gray-800 font-semibold mt-4">Lihat Selengkapnya..</a>
+            </div>
+
+            <!-- Testimonial 2 
+            <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                <h5><b>Coming Soon</b></h5>
+                <p class="text-gray-600">
+                    "................................................................................"
+                </p>
+                <p class="text-gray-800 font-semibold mt-4"></p>
+            </div>
+
+            <!-- Testimonial 3 
+            <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                <h5><b>Coming Soon</b></h5>
+                <p class="text-gray-600">
+                    "................................................................................"
+                </p>
+                <p class="text-gray-800 font-semibold mt-4"></p>
+            </div>
+
+            <!-- Testimonial 4 
+            <div class="max-w-md mx-4 my-8 bg-white p-6 rounded-lg shadow-lg">
+                <h5><b>Coming Soon</b></h5>
+                <p class="text-gray-600">
+                    "................................................................................"
+                </p>
+                <p class="text-gray-800 font-semibold mt-4"></p>
+            </div> -->
+
+            <!-- Add more testimonials as needed -->
+
+        </div>
+    </div>
+</section>
+
+
+<!-- JavaScript for Description Interaction -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const shortDescription = document.getElementById('short-description');
+        const fullDescription = document.getElementById('full-description');
+        const expandButton = document.getElementById('expand-description');
+
+        expandButton.addEventListener('click', function() {
+            shortDescription.style.display = 'none';
+            fullDescription.style.display = 'block';
+            expandButton.style.display = 'none';
+        });
+    });
+</script>
+
+
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center" id="contact">
+            <!-- Contact Form (Left) -->
+            <div class="lg:w-1/2 lg:mr-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+                <form action="#" method="post" class="w-full max-w-lg">
+                    <!-- Your contact form fields go here -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <!-- Add more form fields as needed -->
+
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Information (Right) -->
+            <div class="lg:w-1/2">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+                <p class="text-gray-600 mb-2">Address: Blok Heuleut, Desa Cieurih, Kec. Maja</p>
+                <p class="text-gray-600 mb-2">Phone: 0858-6070-1560</p>
+                <p class="text-gray-600">Email: kokoronigiri@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        &copy; 2024 Kokoro.Id. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script>
+        // JavaScript to toggle the mobile menu visibility
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.getElementById('close-mobile-menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
